@@ -3,7 +3,9 @@ import { ThumbUpIcon } from "@heroicons/react/outline";
 import { forwardRef } from "react";
 
 const Thumbnail = forwardRef(({ result }, ref) => {
-  const base_url = "https://image.tmdb.org/t/p/original/";
+  const base_url = "https://image.tmdb.org/t/p/original";
+  console.log(`${base_url}${result.backdrop_path || result.poster_path} `);
+  console.log(`${base_url}${result.poster_path}`);
   return (
     <div
       ref={ref}
