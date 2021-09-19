@@ -11,7 +11,7 @@ const Thumbnail = forwardRef(({ result }, ref) => {
       ref={ref}
       className="p-2 group cursor-pointer transition duration-200 ease-in transform sm:hover:scale-105 hover:z-50"
     >
-      <Image
+      <img
         layout="responsive"
         src={
           `${base_url}${result.backdrop_path || result.poster_path} ` ||
