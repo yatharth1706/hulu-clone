@@ -17,10 +17,10 @@ const Thumbnail = forwardRef(({ result }, ref) => {
           `${base_url}${result.backdrop_path || result.poster_path} ` ||
           `${base_url}${result.poster_path}`
         }
-        height={400}
-        width={450}
+        height={300}
+        width={360}
       />
-      <div className="p-2">
+      <div className="p-2" style={{ width: "360px" }}>
         <p className="truncate max-w-md">{result.overview}</p>
         <h2 className="mt-1 text-2xl text-white transition-all duration-100 ease-in-out group-hover:font-bold">
           {result.title || result.original_name}
